@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/expandedListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnLaunchMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch Map" />
+
+    <Button
+        android:id="@+id/btnDelivered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Claim Delivery" />
+
+    <LinearLayout
+        android:id="@+id/pnlCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnCallCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Call Customer"
+            android:visibility="gone"
+            tools:layout_weight=".5" />
+
+        <Button
+            android:id="@+id/btnFailedDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Failed Delivery"
+            android:visibility="gone"
+            tools:layout_weight=".5" />
+    </LinearLayout>
+</LinearLayout>
